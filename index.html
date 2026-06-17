@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concept94 · Portfolio</title>
+  <meta name="description" content="The personal portfolio of a self-taught developer." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <span class="logo">C94</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Self-taught developer</p>
+      <h1>Hi, I'm <span class="accent">Your Name</span>.</h1>
+      <p class="tagline">
+        I'm learning to build things on the web — one small project at a time.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#projects">See my work</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <p>
+        I'm a self-taught developer just getting started. No formal schooling —
+        just curiosity and a habit of building. Right now I'm learning the
+        fundamentals: HTML, CSS, JavaScript, and the everyday tools real
+        developers use like Git and GitHub.
+      </p>
+      <p>
+        This site is itself my first hosted project. As I build more, this is
+        where they'll live.
+      </p>
+
+      <h3>What I'm learning</h3>
+      <ul class="tags">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>This portfolio</h3>
+          <p>A hand-built, responsive personal site — hosted free on GitHub Pages.</p>
+          <span class="card-tag">HTML · CSS</span>
+        </article>
+        <article class="card">
+          <h3>First PR practice</h3>
+          <p>Where I learned the full pull-request workflow from scratch.</p>
+          <span class="card-tag">Git · GitHub</span>
+        </article>
+        <article class="card card-soon">
+          <h3>Coming soon</h3>
+          <p>The next thing I build will show up right here.</p>
+          <span class="card-tag">In progress</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Get in touch</h2>
+      <p>I'm always up for learning. Reach me here:</p>
+      <div class="links">
+        <a href="https://github.com/Concept94" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:conceptvague@outlook.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built from scratch by Your Name · <span id="year"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
