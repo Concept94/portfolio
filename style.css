@@ -134,6 +134,14 @@ h3 { margin: 1.6rem 0 0.7rem; font-size: 1.1rem; }
 
 .section p { color: var(--muted); margin-bottom: 1rem; max-width: 44rem; }
 
+.role {
+  color: var(--accent-2);
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 0.2px;
+  margin-bottom: 1.3rem !important;
+}
+
 .tags {
   list-style: none;
   display: flex;
