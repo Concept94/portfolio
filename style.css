@@ -173,6 +173,63 @@ h3 { margin: 1.6rem 0 0.7rem; font-size: 1.1rem; }
 }
 .card-soon { opacity: 0.7; border-style: dashed; }
 
+/* ---- Investing ---- */
+.invest-grid {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.pie {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: conic-gradient(
+    #7c5cff 0 32.35%,
+    #4dd6c1 32.35% 52.32%,
+    #5b8def 52.32% 67.91%,
+    #f6a94a 67.91% 78.49%,
+    #ef6f6c 78.49% 88.39%,
+    #b07cff 88.39% 92.99%,
+    #f2c94c 92.99% 97.36%,
+    #56c271 97.36% 100%
+  );
+  -webkit-mask: radial-gradient(circle, transparent 40%, #000 41%);
+  mask: radial-gradient(circle, transparent 40%, #000 41%);
+}
+.pie-legend {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, auto));
+  gap: 0.55rem 1.6rem;
+}
+.pie-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+.pie-legend b { color: var(--muted); font-weight: 600; margin-left: auto; }
+.sw {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.muted-note {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 1.2rem;
+}
+.principles { margin: 0.5rem 0 0 1.1rem; color: var(--muted); }
+.principles li { margin-bottom: 0.6rem; padding-left: 0.3rem; }
+.principles strong { color: var(--text); }
+
 /* ---- Contact ---- */
 .links { display: flex; gap: 1rem; flex-wrap: wrap; }
 .links a {
